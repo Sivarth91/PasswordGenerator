@@ -91,4 +91,8 @@ button {
     .settings {
         left: calc(10% + 10px);
     }
+
+    .generate-btn {
+        width: 50%;
+    }
 }
