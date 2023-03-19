@@ -73,48 +73,22 @@ button {
     transition: 0.5s;
 }
 
+@media screen and (min-width: 500px) {
+    main {
+        width: 50%;
+    }
 
-
-/*
-.generate-btn {
-    color: #F1F1F1;
-    font-size: 20px;
-    padding: 0 50px;
-    width: 50%;
-    height: 10%;
-    border-radius: 40px;
-    position: relative;
-    display: block;
-    align-items: center;
-    top: 20vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    .settings {
+        left: calc(5% + 10px);
+    }
 }
 
-main {
-    width: 35vw;
-    height: 88vh;
-    background-color: #151516;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 40px auto;
-    box-shadow: 0 4px 100px #151516;
-    font-size: 16px;
-}
+@media screen and (min-width: 1000px) {
+    main {
+        width: 35vw;
+    }
 
-.container {
-    width: 75%;
-    height: 55px;
-    background-color: #2A2A2C;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    margin: 0 auto;
-    padding: 12px 10px;
-    border-radius: 20px;
-    font-size: 18px;
+    .settings {
+        left: calc(10% + 10px);
+    }
 }
-*/
