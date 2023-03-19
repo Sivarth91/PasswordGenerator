@@ -73,27 +73,7 @@ button {
     transition: 0.5s;
 }
 
-@media screen and (min-width: 500px) {
-    main {
-        width: 50%;
-    }
 
-    .settings {
-        left: calc(5% + 10px);
-    }
-
-}
-
-@media screen and (min-width: 1000px) {
-    main {
-        width: 35vw;
-    }
-
-    .settings {
-
-    }
-
-}
 
 /*
 .generate-btn {
