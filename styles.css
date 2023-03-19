@@ -85,7 +85,6 @@ button {
     .settings {
         left: calc(5% + 10px);
     }
-    
 }
 
 @media screen and (min-width: 600px) {
