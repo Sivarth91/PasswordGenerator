@@ -69,7 +69,7 @@ button {
 
 .generate-btn:hover {
     cursor: pointer;
-    box-shadow: 0 4px 40px;
+    box-shadow: 0 4px 30px #2A2A2C;
     transition: 0.5s;
 }
 
@@ -78,8 +78,24 @@ button {
         width: 50%;
     }
 
+    .container {
+        font-size: 20px;
+    }
+
     .settings {
         left: calc(5% + 10px);
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    .settings {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .generate-btn {
+        top: calc(40vh - (18px + 32px));
     }
 }
 
@@ -90,9 +106,12 @@ button {
 
     .settings {
         left: calc(10% + 10px);
+        font-size: 20px;
+        line-height: 32px;
     }
 
     .generate-btn {
         width: 50%;
+        top: calc(40vh - (20px + 32px));
     }
 }
