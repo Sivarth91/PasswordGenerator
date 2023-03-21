@@ -14,6 +14,11 @@ main {
     flex-direction: column;
     background-color: #151516;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+main:hover {
+    transform: scale(1.05);
 }
 
 h1 {
