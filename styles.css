@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    width: auto;
+    width: 50%;
     height: 80vh;
     margin: 50px auto;
     display: flex;
@@ -49,20 +49,20 @@ button {
 }
 
 .settings {
-    width: calc(100% - 25px);
+    width: calc(100% - 11%);
     position: relative;
     top: 25px;
-    left: 25px;
+    left: 11%;
     font-size: 16px;
 }
 
 .generate-btn {
-    width: 75%;
+    width: 50%;
     height: 10%;
     border-radius: 40px;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
-    top: 40vh;
+    top: 30vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -73,44 +73,72 @@ button {
     transition: 0.5s;
 }
 
-@media screen and (min-width: 500px) {
-    main {
-        width: 50%;
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
     }
 
     .container {
-        font-size: 20px;
+        height: 45px;
     }
 
-    .settings {
-        left: calc(5% + 10px);
+    .btn, img {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        border-radius: inherit;
+    }
+
+    .container, .settings, .generate-btn {
+        font-size: 14px;
+    }
+
+    .generate-btn {
+        top: calc(30vh + (5px + 10px + 2px));
     }
 }
 
-@media screen and (min-width: 600px) {
-    .settings {
+@media screen and (max-width: 576px) {
+    h1 {
         font-size: 18px;
-        line-height: 32px;
+    }
+
+    .container {
+        height: 35px;
+    }
+
+    .btn img {
+        width: 25px;
+        height: 25px;
+        top: 0;
+        right: 5%;
+    }
+
+    .container, .settings, .generate-btn {
+        font-size: 12px;
     }
 
     .generate-btn {
-        top: calc(40vh - (18px + 32px));
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        width: 75%;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 275px) {
     main {
-        width: 35vw;
+        width: 85%;
     }
+}
 
-    .settings {
-        left: calc(10% + 10px);
-        font-size: 20px;
-        line-height: 32px;
-    }
-
+@media screen and (min-height: 768px) {
     .generate-btn {
-        width: 50%;
-        top: calc(40vh - (20px + 32px));
+        height: 7%;
+        top: 50vh;
     }
 }
