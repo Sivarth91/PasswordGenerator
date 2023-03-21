@@ -126,12 +126,6 @@ button {
 
 @media screen and (max-width: 375px) {
     main {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 275px) {
-    main {
         width: 85%;
     }
 }
